@@ -1,9 +1,9 @@
 <template>
   <main>
     <!-- section 1 starts-->
-    <app-section1/>
-    <app-section2/>
-    <app-section3/>
+    <app-section1 />
+    <app-section2 />
+    <app-section3 />
   </main>
 </template>
 
@@ -16,9 +16,9 @@ import AppSection3 from "./main-section3";
 export default {
   name: "main-app",
   components: {
-    AppSection1 ,
-    AppSection2 ,
-    AppSection3 ,
+    AppSection1,
+    AppSection2,
+    AppSection3,
   },
 };
 </script>
@@ -43,7 +43,5 @@ main {
     border: solid #eaeaea;
     border-width: 0 0 1px 0;
   }
-
-
 }
 </style>

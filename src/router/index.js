@@ -24,10 +24,10 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
 
   routes,
-  scrollBehavior(to, /*from, savedPosition*/) {
+  scrollBehavior(to /*from, savedPosition*/) {
     // console.log("to:", to, "from:", from, "savedPos:", savedPosition);
     if (to.hash) {
-      return new Promise((resolve , /*reject*/) => {
+      return new Promise((resolve /*reject*/) => {
         setTimeout(() => {
           resolve({
             el: to.hash,

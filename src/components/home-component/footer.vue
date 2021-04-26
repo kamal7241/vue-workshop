@@ -27,7 +27,7 @@ footer {
     justify-content: space-between;
     color: white;
     align-items: center;
-    &>p:first-child{
+    & > p:first-child {
       text-transform: capitalize;
     }
     ul {
@@ -38,7 +38,7 @@ footer {
       li {
         padding: 10px 0px 10px 10px;
         margin-left: 5px;
-        a{
+        a {
           text-decoration: underline;
           cursor: pointer;
           text-transform: capitalize;
@@ -57,7 +57,7 @@ footer {
       ul {
         width: 100%;
         justify-content: center;
-      flex-wrap: wrap;
+        flex-wrap: wrap;
         li {
           margin: 0;
           // padding-left: 0;

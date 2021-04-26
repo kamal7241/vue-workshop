@@ -34,9 +34,14 @@ export default {
         this.activeRoute(link);
       });
     },
+    checkRoute() {
+      if (window.scrollY >= 990) this.activeRoute(this.links[2]);
+      else if (window.scrollY >= 807) this.activeRoute(this.links[1]);
+      else if (window.scrollY >= 572) this.activeRoute(this.links[0]);
+    },
   },
   mounted() {
-    console.log("register", this.$router.onReady);
+    document.addEventListener("scroll", this.checkRoute);
     // this.$router.onReady(this.activeRoute)
   },
 };
@@ -88,6 +93,5 @@ nav {
       background-color: lightgray;
     }
   }
-
 }
 </style>

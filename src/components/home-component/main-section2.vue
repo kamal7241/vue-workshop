@@ -21,8 +21,8 @@
       </p>
       <transition name="fade">
         <ul class="card-body" @click="test" v-show="checkBox">
-          <li  v-for="(item , index) in items" :key="index" class="card-item">
-            <span>{{item}}</span>
+          <li v-for="(item, index) in items" :key="index" class="card-item">
+            <span>{{ item }}</span>
             <span class="arrow">
               <span class="arrow-head"></span>
             </span>
@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       checkBox: false,
-      items:[1997 , 1998  , 1779 , 1774  , 1820]
+      items: [1997, 1998, 1779, 1774, 1820],
     };
   },
   methods: {
@@ -176,8 +176,8 @@ $secPadding: 2em;
   }
   .line-indicator {
     content: "";
-    height: calc(100% - calc(calc(calc(36px / 2) + 10px)  + calc( 73px / 2) ) );
-    border:  solid black;
+    height: calc(100% - calc(calc(calc(36px / 2) + 10px) + calc(73px / 2)));
+    border: solid black;
     border-width: 0 0 0 0.5px;
     position: absolute;
     box-sizing: border-box;

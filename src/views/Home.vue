@@ -1,5 +1,5 @@
 <template>
-  <div  @mousewheel="checkRoute" class="home">
+  <div  class="home">
     <home-header-component />
     <home-nav-bar />
     <home-main-component />
@@ -26,9 +26,8 @@ export default {
   methods: {
     checkRoute(e) {
       console.log(e);
-    console.info("Home mounted", this.$route);
-    console.info("Home mounted", this.$router);
-
+      console.info("Home mounted", this.$route);
+      console.info("Home mounted", this.$router);
     },
   },
   mounted() {
